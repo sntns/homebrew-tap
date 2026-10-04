@@ -1,25 +1,25 @@
 class RemoraEtcher < Formula
   desc "Standalone provisioning and flashing tool for Remora devices"
   homepage "https://github.com/sntns/remora-companion"
-  version "0.7.2"
+  version "0.7.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/sntns/remora-companion/releases/download/v0.7.2/remora-etcher-aarch64-apple-darwin.tar.xz"
-      sha256 "7c498462b46b65cd880fd27b57d6719e5d02b8223e0775610d85c6db66b08f4c"
+      url "https://github.com/sntns/remora-companion/releases/download/v0.7.3/remora-etcher-aarch64-apple-darwin.tar.xz"
+      sha256 "93b293c9d37b33836ef9a7476db421645b5fcbd2f94555f9c45fe259a3af3942"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/sntns/remora-companion/releases/download/v0.7.2/remora-etcher-x86_64-apple-darwin.tar.xz"
-      sha256 "ecee1088884f340e48af090d95faf812fc487156451644a41f4717ba201a7766"
+      url "https://github.com/sntns/remora-companion/releases/download/v0.7.3/remora-etcher-x86_64-apple-darwin.tar.xz"
+      sha256 "e35edc6792b9fab6ffde0dae4d42d6010d983269800c7e88d3b8858936908f56"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/sntns/remora-companion/releases/download/v0.7.2/remora-etcher-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "3f2731b9be18bb85d625ca40d0f990b837aa41a0b7cbbe17abde00be47079a0c"
+      url "https://github.com/sntns/remora-companion/releases/download/v0.7.3/remora-etcher-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "5c72963cd7b299ddffa2e573b7ccc9394191f69dd7e6299c0926120797b4f344"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/sntns/remora-companion/releases/download/v0.7.2/remora-etcher-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "b4018e1b3d7b3061f80694ac036226d4d75bf8079e3751d43fdcd0c1d31ce8db"
+      url "https://github.com/sntns/remora-companion/releases/download/v0.7.3/remora-etcher-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "9310104af140430d9bc4672875abf021c7922fa3e5a4ab81d0447c439942a4c3"
     end
   end
   license "Apache-2.0"
