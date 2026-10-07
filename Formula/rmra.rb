@@ -1,25 +1,25 @@
 class Rmra < Formula
   desc "Remora operator CLI: log in to sntns-platform and reach your devices through the remora channel"
   homepage "https://github.com/sntns/remora-companion"
-  version "0.12.1"
+  version "0.13.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/sntns/remora-companion/releases/download/v0.12.1/rmra-aarch64-apple-darwin.tar.xz"
-      sha256 "24984258be6b44465ae7c4f2aac25a54ab4124512659bb19cc0f7991e695f4c6"
+      url "https://github.com/sntns/remora-companion/releases/download/v0.13.0/rmra-aarch64-apple-darwin.tar.xz"
+      sha256 "e27cfbe83abd46378b55cffaeefc45c8b63628a64dd8737c8ed4701da6c66510"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/sntns/remora-companion/releases/download/v0.12.1/rmra-x86_64-apple-darwin.tar.xz"
-      sha256 "f2762657ddcaae04a7c30cb0ca3c4f18760b3e97ab56e622fe4ef2aec6a66317"
+      url "https://github.com/sntns/remora-companion/releases/download/v0.13.0/rmra-x86_64-apple-darwin.tar.xz"
+      sha256 "d45425ba85590071c97c6036af064a02aa21c8f45d5aecba1b906dac3e9d304e"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/sntns/remora-companion/releases/download/v0.12.1/rmra-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "249434fb499e745129e4d354f456bcef2879fd168b313a346a8cdac29b9c8318"
+      url "https://github.com/sntns/remora-companion/releases/download/v0.13.0/rmra-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "541f9ac4c4c23c1373dcdde9ee28b2953ab85a83646bd227b990e214a12b2e74"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/sntns/remora-companion/releases/download/v0.12.1/rmra-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "1551766a517f0cd28d3a9c167991dfffa6e98f628d215143130858b7e846630f"
+      url "https://github.com/sntns/remora-companion/releases/download/v0.13.0/rmra-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "fe49e33b52b9f660d7ff678ce7c7923e8ed82313cfd37f9d9117c277afde0b0f"
     end
   end
   license "Apache-2.0"
