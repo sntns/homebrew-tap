@@ -5,21 +5,21 @@
 class Nemo < Formula
   desc "Deploy applications of containers onto Docker, with Compose or Swarm, as CNAB bundles"
   homepage "https://github.com/sntns/nemo"
-  version "0.7.0"
+  version "0.8.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sntns/nemo/releases/download/v0.7.0/nemo_0.7.0_darwin_amd64.tar.gz"
-      sha256 "b0ef3d93950806d623abe31f3fe99ada31184f1b5d7929211885ca0c9100f2f8"
+      url "https://github.com/sntns/nemo/releases/download/v0.8.0/nemo_0.8.0_darwin_amd64.tar.gz"
+      sha256 "603a6a46a05cbcbc7b092f9dfa6a378afe8232b5463adf76f2a3402e50408fbd"
 
       define_method(:install) do
         bin.install "nemo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sntns/nemo/releases/download/v0.7.0/nemo_0.7.0_darwin_arm64.tar.gz"
-      sha256 "19536e0c8c0a45725944fb89cb9a85b5e11e612c89a09796d8084c6f4fd11a0f"
+      url "https://github.com/sntns/nemo/releases/download/v0.8.0/nemo_0.8.0_darwin_arm64.tar.gz"
+      sha256 "377d26b89d5abffb38b64d76156154c233225d33a0ed29be4db42453f28da206"
 
       define_method(:install) do
         bin.install "nemo"
@@ -29,15 +29,15 @@ class Nemo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sntns/nemo/releases/download/v0.7.0/nemo_0.7.0_linux_amd64.tar.gz"
-      sha256 "a10a85b4b688085d5713003e583b389a6181c75941f3760dd6a168cb80f3f1a8"
+      url "https://github.com/sntns/nemo/releases/download/v0.8.0/nemo_0.8.0_linux_amd64.tar.gz"
+      sha256 "0f43f312178b805cc7513af2175ca6dc19f0a9ae03eb217e73c19609038a0875"
       define_method(:install) do
         bin.install "nemo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sntns/nemo/releases/download/v0.7.0/nemo_0.7.0_linux_arm64.tar.gz"
-      sha256 "214e0be0b6812a6602e0c536bb6234f0a3e080a68e7c8f98e8b15f9ef18f1b05"
+      url "https://github.com/sntns/nemo/releases/download/v0.8.0/nemo_0.8.0_linux_arm64.tar.gz"
+      sha256 "bbcda9cab82f5134e0077feece323b07142a4298a5a320876cebb50c5462db5d"
       define_method(:install) do
         bin.install "nemo"
       end
